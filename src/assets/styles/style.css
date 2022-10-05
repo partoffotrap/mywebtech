@@ -59,7 +59,7 @@
 
 .butt:hover{
     cursor: pointer;
-    background: linear-gradient(dodgerblue, white, rebeccapurple);
+    background: linear-gradient(dodgerblue, mediumpurple, rebeccapurple);
 }
 
 .ph {
