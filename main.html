@@ -5,22 +5,25 @@
     <title>lesson4</title>
     <link href="main.css" rel="stylesheet" type="text/css">
 </head>
+<body>
 <header>
     <h3 class="blue-head">IT Website</h3>
     <div class="menu">
         <ul>
-            <li><a href="/services">Services</a></li>
-            <li><a href="/media">Media</a></li>
-            <li><a href="/cases">Cases</a></li>
-            <li><a href="/faq">FAQ</a></li>
-            <li><a href="/contacts">Contacts</a></li>
+            <li><a class="menu-text" href="/services">Services</a></li>
+            <li><a class="menu-text" href="/media">Media</a></li>
+            <li><a class="menu-text" href="/cases">Cases</a></li>
+            <li><a class="menu-text" href="/faq">FAQ</a></li>
+            <li><a class="menu-text" href="/contacts">Contacts</a></li>
         </ul>
     </div>
     <div class="head-contacts">
         <div class="phone-contacts">
-            <img class='contacts-icon' src="./src/assets/icons/phone.svg" alt="tel icon">
-            <p class="contact-text"><a class="link" href="tel:+7 (111) 111 11 11">+7 (111) 111 11 11</a></p>
-            <p class="contact-text"><a class="link" href="tel:+7 (111) 111 11 11">+7 (111) 111 11 11</a></p>
+            <ul>
+                <li> <img class='contacts-icon' src="./src/assets/icons/phone.svg" alt="tel icon"> </li>
+                <li> <p class="contact-text"><a class="link" href="tel:+7 (111) 111 11 11">+7 (111) 111 11 11</a></p> </li>
+                <li> <p class="contact-text"><a class="link" href="tel:+7 (111) 111 11 11">+7 (111) 111 11 11</a></p> </li>
+            </ul>
         </div>
         <div class="mail-contacts">
             <img class='contacts-icon' src="./src/assets/icons/mail.svg" alt="mail icon">
@@ -34,7 +37,7 @@
     <div class="upper-main">
         <h1 class="main-head">Development of <span class="blue">mobile<br>applications</span> and <span
                 class="blue">web services</span> of<br>any complexity</h1>
-        <p class="main-paragraph"> We create mobile applications for iOS, Android that transfer your business to mobile applications of your customers' devices</p>
+        <p class="main-paragraph"> We create mobile applications for iOS, Android that transfer your business to mobile <br> applications of your customers' devices</p>
     </div>
     <div class="bottom-main">
         <h4 class="bottom-main-head"> Leave your contacts and we will call you back within 30 minutes</h4>
@@ -47,7 +50,7 @@
                 <label for="fullname">Full name</label>
                 <input type="text" name="full-name" id="fullname" placeholder="Your full name">
             </div>
-            <input type="submit" value="Get consultation">
+            <input type="submit" class="submit" value="Get consultation">
         </form>
     </div>
 </div>
@@ -55,6 +58,7 @@
 
 
 <footer>
+    <div class="footer-background">
     <h2 class="footer-head">IT WEBSITE</h2>
     <div class="footer-contacts">
         <div class="contact-elements">
@@ -90,4 +94,6 @@
         <img class='icon' src="./src/assets/icons/vector.svg" alt="vector svg">
         <span class="footer-text">We work throughout world</span>
     </div>
+    </div>
 </footer>
+</body>

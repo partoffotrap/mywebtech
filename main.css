@@ -1,8 +1,13 @@
 header {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
+    top: 25px;
+    margin-left: 108px;
+    background-color: white;
+    position: fixed;
+    padding: 20px 25px;
 }
 .menu {
     flex-grow: 1;
@@ -22,7 +27,121 @@ header {
 }
 .blue-head {
     margin-right: 80px;
+    font-size: 20px;
+    font-weight: 700;
+    color: dodgerblue;
 }
 .menu .hover {
-    text-decoration: underline;
+    text-decoration: none;
+}
+.menu-text {
+    color: black;
+}
+body {
+    background: #d1d1d5;
+}
+
+.head-contacts {
+    display: flex;
+    padding-left: 84px;
+    column-gap: 24px;
+}
+.phone-contacts li {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.main-body {
+    width: 100%;
+    padding-top: 160px;
+    padding-left: 100px;
+    padding-bottom: 300px;
+
+}
+.main-head {
+    padding-bottom: 24px;
+}
+.main-paragraph {
+    font-weight: 500;
+    color: black;
+    padding-bottom: 64px;
+}
+.blue {
+    color: dodgerblue;
+}
+.upper-main {
+    width: 700px;
+}
+
+.bottom-main {
+    background: #FFFFFF;
+    padding: 24px;
+    width: max-content;
+}
+.bottom-main-head {
+    font-size: 20px;
+    font-weight: 700;
+}
+.contact-form {
+    padding-top: 34px;
+    display: flex;
+}
+.contact-form-element {
+    display: flex;
+    flex-direction: column;
+    width: 224px;
+    padding-right: 24px;
+}
+.submit {
+    background-color: steelblue;
+    border: dodgerblue;
+    color: white;
+}
+.footer {
+    margin-top: auto;
+    padding: 50px 110px;
+}
+.footer-background {
+    display: flex;
+    flex-direction: column;
+    background: #102233;
+    padding: 25px;
+    row-gap: 40px;
+    color: white;
+}
+.footer-head {
+    color: white;
+    text-align: center;
+}
+.footer-contacts {
+    display: flex;
+    justify-content: space-evenly;
+}
+.contact-element {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.info-contact {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    color: darkgray;
+    column-gap: 10px;
+}
+.contact-text {
+    font-weight: 600;
+    font-size: 17px;
+}
+.footer-text {
+    font-size: 13px;
+    font-weight: 400;
+    text-align: left;
+}
+.footer-conclusion {
+    margin: 0 auto;
+    vertical-align: center;
 }
