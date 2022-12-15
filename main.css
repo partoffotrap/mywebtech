@@ -5,19 +5,19 @@ header {
     align-items: center;
     top: 25px;
     margin-left: 108px;
-    background-color: white;
+    background-color: whitesmoke;
     position: fixed;
-    padding: 20px 25px;
+    padding: 0 15px;
 }
 .menu {
     flex-grow: 1;
+    font-size: 18px;
 }
 .menu ul {
     display: flex;
     flex-flow: row nowrap;
-    margin: 0;
-    padding: 0;
     list-style: none;
+
 }
 .menu li {
     margin-right: 24px;
@@ -44,21 +44,23 @@ body {
 .head-contacts {
     display: flex;
     padding-left: 84px;
-    column-gap: 24px;
 }
-.phone-contacts li {
+.phone-mail-contacts ul {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
+    list-style: none;
+    column-gap: 10px;
 }
+
 .main-body {
     width: 100%;
     padding-top: 160px;
     padding-left: 100px;
     padding-bottom: 300px;
-
 }
+
 .main-head {
     padding-bottom: 24px;
 }
