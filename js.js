@@ -91,3 +91,48 @@ console.log(spinWords('Весело по полю бегает кабанчик'
 
 
 ///////////////////////////// Бонус ////////////////////////////////////
+
+///////////////////////////// Четвертая Задача ////////////////////////////////////////////////////
+{
+    function getElementsIndex(nums, target) {
+        for (let i = 0; i < nums.length; i++)
+            for (let j = i; j < nums.length; j++)
+                if (nums[i] + nums[j] === target)
+                    return [i, j];
+
+        return [];
+    }
+
+    const nums = [6, 7, 12, 3, 5, 1], target = 11;
+
+    const result = getElementsIndex(nums, target);
+    console.log(result); // [0, 4]
+}
+
+
+///////////////////////////// Пятая Задача ////////////////////////////////////////////////////
+{
+    function getLargestPrefix(strings) {
+        let prefix = strings[0].slice(-1);
+
+        let prefixLength = 1;
+
+        while(true) {
+
+            for (let i = 0; i < strings.length; i++) {
+                if(!strings[i].endsWith(prefix))
+                    return prefix.slice(1).length > 1 ? prefix.slice(1) : '';
+            }
+
+            prefixLength++;
+            prefix = strings[0].slice(-prefixLength);
+        }
+    }
+
+    const firstLine = ["цветок","поток","хлопок"];
+    const secondLine = ['собака', 'машина', 'облик']
+
+
+    console.log(getLargestPrefix(firstLine)); // ок
+    console.log(getLargestPrefix(secondLine)); // ''
+}
