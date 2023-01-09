@@ -1,0 +1,38 @@
+@media screen and (max-width: 500px) and (min-width: 1px) {
+    body{
+        width: 100%;
+        margin-left: 0;
+    }
+    header{
+        width: 100%;
+        font-size: 0.8em;
+    }
+    footer {
+        width: 100%;
+    }
+    #pole{
+        display: block;
+        max-height: none;
+    }
+    .fathergod{
+        width: 80%;
+        margin-top: 15%;
+    }
+    #polecont1 ul{
+        margin-top: 1px;
+        margin-bottom: 1px;
+    }
+    #polecont1 h2{
+        margin-top: 1px;
+        margin-bottom: 1px;
+    }
+    #polecont2{
+        margin-left: 0px;
+    }
+    #polecont2 li{
+        padding-top: 4%;
+    }
+}
+.footinf p{
+    font-size: 0.6em;
+}
