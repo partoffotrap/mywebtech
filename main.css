@@ -3,11 +3,24 @@ header {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    top: 25px;
+    top: 24px;
+    margin-top: 24px;
     margin-left: 108px;
-    background-color: whitesmoke;
+    margin-right: 208px;
+    background-color: #FFFFFF;
     position: fixed;
     padding: 0 15px;
+    flex-direction: row;
+    gap: 15px;
+
+    width: 1124px;
+    height: 56px;
+    left: 108px;
+
+    /* Elevation 4 pt · Badges */
+
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
 }
 .menu {
     flex-grow: 1;
@@ -26,32 +39,57 @@ header {
     margin-right: 0;
 }
 .blue-head {
-    margin-right: 80px;
+    padding-left: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     font-size: 20px;
     font-weight: 700;
-    color: dodgerblue;
-}
-.menu .hover {
-    text-decoration: none;
+    color: #2D66EE;
+    width: 120px;
+    height: 24px;
+    font-style: normal;
+    line-height: 18px;
+    letter-spacing: -0.154px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 .menu-text {
-    color: black;
+    font-size: 16px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    color: #101828;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+
+    letter-spacing: -0.154px;
+
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 body {
-    background: #d1d1d5;
+    background: #F2F4F7;
 }
 
 .head-contacts {
     display: flex;
-    padding-left: 84px;
 }
+
+.link {
+    text-decoration: none;
+}
+
 .phone-mail-contacts ul {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
     list-style: none;
-    column-gap: 10px;
+    column-gap: 20px;
 }
 
 .main-body {
@@ -66,27 +104,38 @@ body {
 }
 .main-paragraph {
     font-weight: 500;
-    color: black;
+    font-size: 16px;
+    color: #101828;
     padding-bottom: 64px;
 }
 .blue {
     color: dodgerblue;
 }
 .upper-main {
-    width: 700px;
+    margin-left: 108px;
+    margin-right: 532px;
+    font-size: 20px;
+    color: #101828;
+
 }
 
 .bottom-main {
     background: #FFFFFF;
     padding: 24px;
     width: max-content;
+    margin-left: 108px;
+
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.08), 0px 0px 24px rgba(0, 0, 0, 0.16);
+    border-radius: 12px;
 }
 .bottom-main-head {
-    font-size: 20px;
+    font-size: 22px;
+    font-style: normal;
     font-weight: 700;
+    color: #101828;
 }
 .contact-form {
-    padding-top: 34px;
+    padding-top: 24px;
     display: flex;
 }
 .contact-form-element {
@@ -96,9 +145,29 @@ body {
     padding-right: 24px;
 }
 .submit {
-    background-color: steelblue;
     border: dodgerblue;
     color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 11px 24px;
+    margin-left: 10px;
+    margin-top: -15px;
+    gap: 8px;
+
+    width: 132px;
+    height: 58px;
+
+    /* accent */
+
+    background: #2D66EE;
+    border-radius: 8px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
 }
 .footer {
     margin-top: auto;
@@ -107,18 +176,26 @@ body {
 .footer-background {
     display: flex;
     flex-direction: column;
-    background: #102233;
+    background: #101828;
+    /* Elevation 8 pt · Cards */
+
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.08), 0px 2px 24px rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
     padding: 25px;
-    row-gap: 40px;
+    margin: 48px 108px;
+    row-gap: 20px;
     color: white;
 }
 .footer-head {
     color: white;
     text-align: center;
+    font-size: 36px;
+    margin-top: -12px;
 }
 .footer-contacts {
     display: flex;
     justify-content: space-evenly;
+    margin-left: -200px;
 }
 .contact-element {
     display: flex;
@@ -130,7 +207,7 @@ body {
     display: flex;
     align-items: center;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
     color: darkgray;
     column-gap: 10px;
 }
@@ -138,8 +215,13 @@ body {
     font-weight: 600;
     font-size: 17px;
 }
+
+.contact-under {
+    font-size: 20px;
+}
+
 .footer-text {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 400;
     text-align: left;
 }

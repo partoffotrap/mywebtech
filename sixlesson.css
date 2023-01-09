@@ -5,7 +5,7 @@ html{
 body {
     width: 80%;
     height: 100%;
-    background: whitesmoke;
+    background: #F2F4F7;
     margin: auto;
     margin-top: 2%;
     z-index: 100;
@@ -16,6 +16,7 @@ header {
     margin-left: 1%;
     list-style: none;
     color: black;
+    background-color: #FFFFFF;
     max-width: 75%;
     font-family: inter-regular;
     padding: 2px;
@@ -32,11 +33,11 @@ header h1 {
     padding-left: 0.5%;
     font-size: 1.5em;
     display: inline;
-    color: #5069fc;
+    color: #2D66EE;
     text-transform: uppercase; }
 
 #headnumber {
-    color: #5069fc; }
+    color: #2D66EE; }
 
 .fathergod {
     width: 40%;
@@ -50,13 +51,15 @@ header h1 {
     font-size: 1.1em; }
 
 .bluetext {
-    color: #5069fc; }
+    color: #2D66EE; }
 
 #contblockdiv {
     display: flex; }
 #contblockdiv button {
     width: 20%;
-    background: #5069fc; }
+    border: dodgerblue;
+    background: #2D66EE;
+    color: white}
 
 .contblock {
     display: flex;
@@ -93,7 +96,7 @@ footer {
     background: #2e3440;
     width: 90%;
     height: 20%;
-    color: whitesmoke;
+    color: white;
     position: fixed;
     left: 5%;
     bottom: 2%;
