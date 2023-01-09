@@ -4,7 +4,7 @@ html{
 body{
     width: 80%;
     height: 100%;
-    background: whitesmoke;
+    background: #F2F4F7;
     margin: auto;
     margin-top: 2%;
     position: relative;
@@ -25,7 +25,7 @@ header{
     text-align: center;
     top: 2%;
     /* 	text-align: center;*/
-    background: whitesmoke;
+    background: #FFFFFF;
 }
 header li{
     display: inline;
@@ -40,14 +40,14 @@ header h1{
     padding-left: 0.5%;
     font-size: 1.5em;
     display: inline;
-    color: #5069fc;
+    color: #2D66EE;
     text-transform: uppercase;
 }
 #headcont{
     white-space: nowrap;
 }
 #headnumber{
-    color: #5069fc;
+    color: #2D66EE;
     white-space: nowrap;
 }
 #headnumber li{
@@ -81,7 +81,7 @@ header h1{
     font-size: 1.1em;
 }
 .bluetext{
-    color: #5069fc;
+    color: #2D66EE;
 }
 
 #contblockdiv{
@@ -89,7 +89,7 @@ header h1{
 }
 #contblockdiv button{
     width: 20%;
-    background: #5069fc;
+    background: #2D66EE;
 
 }
 .contblock{
@@ -149,10 +149,10 @@ header h1{
 
 /*          Подвал                   */
 footer{
-    background: #2e3440;
+    background: #101828;
     width: 90%;
     height: 20%;
-    color: whitesmoke;
+    color: white;
     /*	position: fixed;*/
     left: 5%;
     bottom: 2%;
@@ -194,7 +194,7 @@ hr{
     margin-bottom: 0px;
     font-size: 0.8em;
     text-align: left;
-    color: #a9a9a9;
+    color: white;
 }
 .footinf p{
     margin-top: 0px;

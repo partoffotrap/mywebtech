@@ -27,11 +27,6 @@
     display: block;
 }
 
-.folder-last{
-    padding-left: 24px;
-}
-
 .list-item_open > .list-item__inner .list-item__arrow {
     transform: rotate(180deg);
 }
-
