@@ -100,7 +100,7 @@ header h1 {
     z-index: -1;
     animation: slide-up 14s infinite linear;
     background-repeat: repeat-y;
-    background-size: 95%;
+    background-size: 155%;
     background-image: url("src/assets/img/column-left.webp");
     position: relative;
 }
