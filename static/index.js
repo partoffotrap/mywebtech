@@ -48,7 +48,11 @@ class Pizza {
         }
 
         if (this.toppings.includes("сливочная моцарелла")) {
-            price += 50;
+            if (this.size === "большая") {
+                price += 100;
+            } else if (this.size === "маленькая") {
+                price += 50;
+            }
         }
         if (this.toppings.includes("сырный борт")) {
             if (this.size === "большая") {
@@ -77,7 +81,7 @@ class Pizza {
         }
 
         if (this.toppings.includes("сливочная моцарелла")) {
-            calories += 20;
+            calories += 0;
         }
         if (this.toppings.includes("сырный борт")) {
             if (this.size === "большая") {
