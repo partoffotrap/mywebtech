@@ -1,0 +1,14 @@
+@import "src/assets/styles/global.css";
+@import "src/assets/styles/fonts.css";
+@import "src/assets/styles/utils.css";
+@import "src/assets/styles/catalog.css";
+@import "src/assets/styles/post.css";
+@import "src/assets/styles/photo.css";
+
+.test {
+    color: yellow !important;
+}
+
+.test {
+    color: red !important;
+}
