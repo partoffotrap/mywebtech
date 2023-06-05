@@ -4,6 +4,6 @@
     <title> tittle </title>
 </head>
 <body>
-<p> Текущий год: {{ currentYear }} </p>
+<p> Текущий год: <?= $currentYear ?> </p>
 </body>
 </html>
