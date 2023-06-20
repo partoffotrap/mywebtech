@@ -1,30 +1,25 @@
 <?php
 include "./db.php";
 
-function renderList($data) {
-    $result = '';
-    if ($data['hasChildren']) {
-        $result .= '<div class="list-item list-item_open" data-parent>';
-        $result .= '    <div class="list-item__inner">';
-        $result .= '        <img class="list-item__arrow" src="src/assets/img/chevron-down.png" alt="chevron-down" data-open>';
-        $result .= '        <img class="list-item__folder" src="src/assets/img/folder.png" alt="folder">';
-        $result .= '        <span>' . $data['name'] . '</span>';
-        $result .= '    </div>';
-        $result .= '    <div class="list-item__items">';
-        foreach ($data['items'] as $item) {
-            $result .= renderList($item);
+function renderList($items, $level) {
+    $html = ''; // инициализировать пустую строку для хранения HTML-кода
+
+    foreach ($items as $item) {
+        if ($item["level"] == $level) {
+            $html .= '<div class="list-item list-item_open" data-parent>';
+            $html .= '<div class="list-item__inner">';
+            $html .= '<img class="list-item__arrow" src="src/assets/img/chevron-down.png" alt="chevron-down" data-open>';
+            $html .= '<img class="list-item__folder" src="src/assets/img/folder.png" alt="folder">';
+            $html .= $item["name"];
+            $html .= '</div>';
+            $html .= '<div class="list-item__items">';
+            $html .= renderList($items, $item["id"]);
+            $html .= '</div>';
+            $html .= '</div>';
         }
-        $result .= '    </div>';
-        $result .= '</div>';
-    } else {
-        $result .= '<div class="list-item" style="padding-left: 24px ">';
-        $result .= '    <div class="list-item__inner">';
-        $result .= '        <img class="list-item__folder" src="src/assets/img/folder.png" alt="folder">';
-        $result .= '        <span>' . $data['name'] . '</span>';
-        $result .= '    </div>';
-        $result .= '</div>';
     }
-    return $result;
+
+    return $html; // вернуть код HTML в виде строки
 }
 
 function getList() {
@@ -42,7 +37,7 @@ function getList() {
 <body>
 <div class="list-items" id="list-items">
     <?php
-        echo renderList(getList(), null);
+    echo renderList(getList(), null);
     ?>
 </div>
 <script src="nine.js" type="module"></script>
