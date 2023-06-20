@@ -1,4 +1,4 @@
-import api from "../src/services/api.js";
+import api from "../services/api.js";
 
 const AuthRepository = {
     async me() {

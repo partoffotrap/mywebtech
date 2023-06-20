@@ -1,7 +1,7 @@
 import Form from "../components/form.js";
-import Auth from "../../../../../../../../Downloads/web-technologies-2022-2-lesson15/web-technologies-2022-2-lesson15/src/services/auth.js";
-import loading from "../../../../../../../../Downloads/web-technologies-2022-2-lesson15/web-technologies-2022-2-lesson15/src/services/loading.js";
-import location from "../../../../../../../../Downloads/web-technologies-2022-2-lesson15/web-technologies-2022-2-lesson15/src/services/location.js";
+import Auth from "../services/auth.js";
+import loading from "../services/loading.js";
+import location from "../services/location.js";
 
 const init = async () => {
     const { ok: isLogged } = await Auth.me()
