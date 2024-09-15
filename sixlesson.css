@@ -1,0 +1,156 @@
+@charset "UTF-8";
+html{
+    height: 100%;
+}
+body {
+    width: 80%;
+    height: 100%;
+    background: #F2F4F7;
+    margin: auto;
+    margin-top: 2%;
+    z-index: 100;
+    position: relative; }
+
+header {
+    margin-top: 1%;
+    margin-left: 1%;
+    list-style: none;
+    color: black;
+    background-color: #FFFFFF;
+    max-width: 75%;
+    font-family: inter-regular;
+    padding: 2px;
+    position: relative;
+    margin: auto; }
+header li {
+    display: inline;
+    padding-left: 1%; }
+header ul {
+    padding-left: 4%;
+    display: inline;
+    font-size: 1.1em; }
+header h1 {
+    padding-left: 0.5%;
+    font-size: 1.5em;
+    display: inline;
+    color: #2D66EE;
+    text-transform: uppercase; }
+
+#headnumber {
+    color: #2D66EE; }
+
+.fathergod {
+    width: 40%;
+    margin-top: 7%;
+    margin-left: 4%; }
+.fathergod h1 {
+    font-size: 1.9em; }
+.fathergod p {
+    font-size: 0.8em; }
+.fathergod h2 {
+    font-size: 1.1em; }
+
+.bluetext {
+    color: #2D66EE; }
+
+#contblockdiv {
+    display: flex; }
+#contblockdiv button {
+    width: 20%;
+    border: dodgerblue;
+    background: #2D66EE;
+    color: white}
+
+.contblock {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-right: 4%; }
+
+
+#colph{
+    height: 30%;
+    width: 20%;
+    position: absolute;
+    right: 10%;
+    top: 20%;
+    z-index: -1;
+    display: flex;
+}
+.photo{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;}
+#photo1{
+    background-image: url("src/assets/img/column-left.webp");
+}
+#photo2{
+    background-image: url("src/assets/img/column-right.webp");
+}
+
+
+
+
+footer {
+    background: #2e3440;
+    width: 90%;
+    height: 20%;
+    color: white;
+    position: fixed;
+    left: 5%;
+    bottom: 2%;
+    right: 5%; }
+footer h1 {
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 1.8em;
+    height: 20%; }
+footer h3 {
+    text-align: center;
+    height: 20%;
+    margin-top: 0px;
+    margin-bottom: 0px; }
+
+hr {
+    width: 90%;
+    position: fixed;
+    bottom: 22%;
+    left: 5%;
+    right: 5%;
+    margin-right: 0px;
+    margin-left: 0px; }
+
+#footerblock {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60%; }
+
+.footinf h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 0.8em;
+    text-align: left;
+    color: #a9a9a9; }
+.footinf p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: left; }
+
+@media screen and (max-width: 726px) and (min-width: 1px) {
+    body {
+        width: 80%;
+        margin-left: 12%; }
+
+    .fathergod {
+        width: 80%; } }
+@media screen and (max-width: 1024px) and (min-width: 727px) {
+    #headnumber {
+        margin-left: 15%;
+        color: blue; } }
+@media screen and (max-width: 1900px) and (min-width: 1025px) {
+    body {
+        width: 80%;
+        margin-left: 12%; } }
